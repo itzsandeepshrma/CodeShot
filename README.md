@@ -17,7 +17,7 @@ CodeShot is a lightweight web application that allows developers to create aesth
 
 ## 📸 Preview
 
-![CodeShot Preview]()
+![CodeShot Preview](https://github.com/user-attachments/assets/96d7b091-950e-4c93-8dcc-e25ebd91f793)
 
 
 ---
