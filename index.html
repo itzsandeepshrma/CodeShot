@@ -46,18 +46,62 @@
       box-shadow: 0 0 15px #8e2eff66;
     }
 
+    /* MacBook style preview container */
     .preview {
       background: #1a002b;
-      padding: 1rem;
-      border-radius: 12px;
-      overflow: auto;
+      border-radius: 14px;
+      box-shadow:
+        0 10px 30px rgba(0,0,0,0.5),
+        inset 0 0 30px #bf00ffaa;
       margin-bottom: 1rem;
-      box-shadow: 0 0 20px #bf00ff33;
+      overflow: hidden;
+      border: 1px solid #5e0099;
+      font-family: 'Fira Code', monospace;
+      position: relative;
     }
 
-    .preview code {
+    /* MacBook top bar */
+    .macbook-top-bar {
+      background: #2c0055;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      border-top-left-radius: 14px;
+      border-top-right-radius: 14px;
+      box-shadow: inset 0 -2px 5px #3d007a;
+    }
+
+    /* Mac window buttons */
+    .mac-btn {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 8px;
+      box-shadow: 0 0 2px rgba(0,0,0,0.3);
+      flex-shrink: 0;
+    }
+    .mac-btn.red {
+      background: #ff605c;
+      border: 1.2px solid #e0443e;
+    }
+    .mac-btn.yellow {
+      background: #ffbd44;
+      border: 1.2px solid #d4a429;
+    }
+    .mac-btn.green {
+      background: #00ca56;
+      border: 1.2px solid #1b8b3d;
+      margin-right: 0;
+    }
+
+    /* Code container inside preview */
+    .preview pre {
+      margin: 0;
+      padding: 1rem;
       font-size: 1rem;
-      font-family: 'Fira Code', monospace;
+      overflow-x: auto;
+      color: #fff;
     }
 
     button {
@@ -109,6 +153,13 @@
     <textarea id="code" placeholder="Paste or type your code here..."></textarea>
 
     <div id="capture" class="preview">
+      <!-- MacBook top bar -->
+      <div class="macbook-top-bar">
+        <div class="mac-btn red"></div>
+        <div class="mac-btn yellow"></div>
+        <div class="mac-btn green"></div>
+      </div>
+
       <pre><code id="codeOutput" class="language-javascript"></code></pre>
     </div>
 
