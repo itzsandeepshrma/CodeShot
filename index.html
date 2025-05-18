@@ -8,19 +8,22 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #2a2a3e);
-      color: white;
+      background: radial-gradient(circle at top left, #2a003f, #0d001f 80%);
+      color: #ffffff;
       margin: 0;
       padding: 2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-attachment: fixed;
+      overflow-x: hidden;
     }
 
     h1 {
       text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 8px #ff00ff, 0 0 12px #9900ff;
     }
 
     .container {
@@ -31,23 +34,25 @@
     textarea {
       width: 100%;
       height: 200px;
-      background: #1e1e2f;
-      color: #eee;
+      background: #1a002b;
+      color: #fff;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
       padding: 1rem;
       font-size: 1rem;
       font-family: 'Fira Code', monospace;
       resize: vertical;
       margin-bottom: 1rem;
+      box-shadow: 0 0 15px #8e2eff66;
     }
 
     .preview {
-      background: #1e1e2f;
+      background: #1a002b;
       padding: 1rem;
-      border-radius: 10px;
+      border-radius: 12px;
       overflow: auto;
       margin-bottom: 1rem;
+      box-shadow: 0 0 20px #bf00ff33;
     }
 
     .preview code {
@@ -60,22 +65,24 @@
       font-size: 1rem;
       border: none;
       border-radius: 8px;
-      background: #ff416c;
+      background: #cc00ff;
       color: white;
       cursor: pointer;
       transition: all 0.3s;
+      box-shadow: 0 0 10px #cc00ff88;
     }
 
     button:hover {
-      background: #ff4b2b;
+      background: #ff00cc;
+      box-shadow: 0 0 15px #ff00ccbb;
     }
 
     select {
-      background: #2a2a3e;
+      background: #2a003f;
       color: white;
       border-radius: 5px;
       padding: 0.5rem;
-      border: 1px solid #555;
+      border: 1px solid #9900cc;
       margin-bottom: 1rem;
     }
 
@@ -83,6 +90,7 @@
       margin-top: 2rem;
       font-size: 0.9rem;
       color: #aaa;
+      text-shadow: 0 0 4px #ff00ff55;
     }
   </style>
 </head>
@@ -148,4 +156,4 @@
     updatePreview();
   </script>
 </body>
-  </html>
+</html>
