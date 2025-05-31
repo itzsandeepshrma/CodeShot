@@ -5,138 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CodeShot – Code to Image Generator</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: radial-gradient(circle at top left, #2a003f, #0d001f 80%);
-      color: #ffffff;
-      margin: 0;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-attachment: fixed;
-      overflow-x: hidden;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2.8rem;
-      margin-bottom: 1.5rem;
-      text-shadow: 0 0 8px #ff00ff, 0 0 12px #9900ff;
-    }
-
-    .container {
-      max-width: 900px;
-      width: 100%;
-    }
-
-    textarea {
-      width: 100%;
-      height: 200px;
-      background: #1a002b;
-      color: #fff;
-      border: none;
-      border-radius: 12px;
-      padding: 1rem;
-      font-size: 1rem;
-      font-family: 'Fira Code', monospace;
-      resize: vertical;
-      margin-bottom: 1rem;
-      box-shadow: 0 0 15px #8e2eff66;
-    }
-
-    /* MacBook style preview container */
-    .preview {
-      background: #1a002b;
-      border-radius: 14px;
-      box-shadow:
-        0 10px 30px rgba(0,0,0,0.5),
-        inset 0 0 30px #bf00ffaa;
-      margin-bottom: 1rem;
-      overflow: hidden;
-      border: 1px solid #5e0099;
-      font-family: 'Fira Code', monospace;
-      position: relative;
-    }
-
-    /* MacBook top bar */
-    .macbook-top-bar {
-      background: #2c0055;
-      height: 32px;
-      display: flex;
-      align-items: center;
-      padding: 0 14px;
-      border-top-left-radius: 14px;
-      border-top-right-radius: 14px;
-      box-shadow: inset 0 -2px 5px #3d007a;
-    }
-
-    /* Mac window buttons */
-    .mac-btn {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      margin-right: 8px;
-      box-shadow: 0 0 2px rgba(0,0,0,0.3);
-      flex-shrink: 0;
-    }
-    .mac-btn.red {
-      background: #ff605c;
-      border: 1.2px solid #e0443e;
-    }
-    .mac-btn.yellow {
-      background: #ffbd44;
-      border: 1.2px solid #d4a429;
-    }
-    .mac-btn.green {
-      background: #00ca56;
-      border: 1.2px solid #1b8b3d;
-      margin-right: 0;
-    }
-
-    /* Code container inside preview */
-    .preview pre {
-      margin: 0;
-      padding: 1rem;
-      font-size: 1rem;
-      overflow-x: auto;
-      color: #fff;
-    }
-
-    button {
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      background: #cc00ff;
-      color: white;
-      cursor: pointer;
-      transition: all 0.3s;
-      box-shadow: 0 0 10px #cc00ff88;
-    }
-
-    button:hover {
-      background: #ff00cc;
-      box-shadow: 0 0 15px #ff00ccbb;
-    }
-
-    select {
-      background: #2a003f;
-      color: white;
-      border-radius: 5px;
-      padding: 0.5rem;
-      border: 1px solid #9900cc;
-      margin-bottom: 1rem;
-    }
-
-    footer {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #aaa;
-      text-shadow: 0 0 4px #ff00ff55;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>CodeShot – Code to Image Generator</h1>
@@ -153,13 +22,11 @@
     <textarea id="code" placeholder="Paste or type your code here..."></textarea>
 
     <div id="capture" class="preview">
-      <!-- MacBook top bar -->
       <div class="macbook-top-bar">
         <div class="mac-btn red"></div>
         <div class="mac-btn yellow"></div>
         <div class="mac-btn green"></div>
       </div>
-
       <pre><code id="codeOutput" class="language-javascript"></code></pre>
     </div>
 
@@ -172,39 +39,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-  <script>
-    const codeInput = document.getElementById('code');
-    const codeOutput = document.getElementById('codeOutput');
-    const languageSelector = document.getElementById('language');
-
-    codeInput.addEventListener('input', updatePreview);
-    languageSelector.addEventListener('change', updateLanguage);
-
-    function updatePreview() {
-      const code = codeInput.value;
-      codeOutput.textContent = code;
-      Prism.highlightElement(codeOutput);
-    }
-
-    function updateLanguage() {
-      const selectedLang = languageSelector.value;
-      codeOutput.className = '';
-      codeOutput.classList.add('language-' + selectedLang);
-      updatePreview();
-    }
-
-    function downloadImage() {
-      const capture = document.getElementById('capture');
-      html2canvas(capture).then(canvas => {
-        const link = document.createElement('a');
-        link.download = 'code.png';
-        link.href = canvas.toDataURL();
-        link.click();
-      });
-    }
-
-    // Initial preview
-    updatePreview();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
