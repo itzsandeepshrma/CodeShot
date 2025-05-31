@@ -1,0 +1,126 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top left, #2a003f, #0d001f 80%);
+  color: #ffffff;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 8px #ff00ff, 0 0 12px #9900ff;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  background: #1a002b;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: 'Fira Code', monospace;
+  resize: vertical;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px #8e2eff66;
+}
+
+.preview {
+  background: #1a002b;
+  border-radius: 14px;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.5),
+    inset 0 0 30px #bf00ffaa;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border: 1px solid #5e0099;
+  font-family: 'Fira Code', monospace;
+  position: relative;
+}
+
+.macbook-top-bar {
+  background: #2c0055;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  box-shadow: inset 0 -2px 5px #3d007a;
+}
+
+.mac-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+  flex-shrink: 0;
+}
+.mac-btn.red {
+  background: #ff605c;
+  border: 1.2px solid #e0443e;
+}
+.mac-btn.yellow {
+  background: #ffbd44;
+  border: 1.2px solid #d4a429;
+}
+.mac-btn.green {
+  background: #00ca56;
+  border: 1.2px solid #1b8b3d;
+  margin-right: 0;
+}
+
+.preview pre {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1rem;
+  overflow-x: auto;
+  color: #fff;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #cc00ff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 10px #cc00ff88;
+}
+
+button:hover {
+  background: #ff00cc;
+  box-shadow: 0 0 15px #ff00ccbb;
+}
+
+select {
+  background: #2a003f;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: 1px solid #9900cc;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-shadow: 0 0 4px #ff00ff55;
+}
