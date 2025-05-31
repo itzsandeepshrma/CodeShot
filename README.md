@@ -6,7 +6,7 @@ CodeShot is a lightweight web application that allows developers to create aesth
 
 ---
 
-## 🚀 Features
+## Features
 
 - Syntax highlighting for multiple programming languages
 - Customizable themes to match your style
@@ -15,14 +15,7 @@ CodeShot is a lightweight web application that allows developers to create aesth
 
 ---
 
-## 📸 Preview
-
-![CodeShot Preview](https://github.com/user-attachments/assets/96d7b091-950e-4c93-8dcc-e25ebd91f793)
-
-
----
-
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 
@@ -41,7 +34,7 @@ Open the index.html file in your preferred web browser to start using the app.
 
 ---
 
-### 🎨 Usage
+### Usage
 
 1. Open the app in your browser.
 2. Paste or write your code snippet in the editor.
@@ -53,7 +46,7 @@ Open the index.html file in your preferred web browser to start using the app.
 
 ---
 
-### 🤝 Contributing
+### Contributing
 
 Contributions are welcome! To contribute:
 
@@ -68,14 +61,14 @@ Please ensure your code follows the existing style guidelines.
 
 ---
 
-### 📄 License
+### License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 
 ---
 
-## 📬 Contact
+## Contact
 
 **For any inquiries, feel free to connect via:**
 
@@ -89,7 +82,7 @@ Let me know if you need any changes!
 
 **This will look clean and professional on your GitHub repository. Let me know if you need any modifications!**
 
-## 📝 Licence 
+## Licence 
   
 **MIT License**
 
