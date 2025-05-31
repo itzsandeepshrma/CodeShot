@@ -76,7 +76,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 **Telegram:** [itz_sandeep_shrma](https://t.me/itz_sandeep_shrma)
 
-**© 2025 𝚂αɴɖεερ 𝚂ʜαяɱα All Right Reserved**
+**© 2025 sᴧɴᴅᴇᴇᴘ sʜᴧʀᴍᴧ All Right Reseverd**
 
 Let me know if you need any changes!
 
@@ -86,7 +86,7 @@ Let me know if you need any changes!
   
 **MIT License**
 
-**Copyright (c) 2025 𝚂αɴɖεερ 𝚂ʜαяɱα**
+**Copyright (c) 2025 sᴧɴᴅᴇᴇᴘ sʜᴧʀᴍᴧ**
 
 **Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
